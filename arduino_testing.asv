@@ -1,0 +1,13 @@
+clear
+
+a = arduino('COM5', 'Nano3');
+
+x = 2000;
+frequency = 0;
+
+while  (frequency < x)
+      playTone(a,'D5',frequency,1)
+      frequency = frequency + 1;
+end
+
+
